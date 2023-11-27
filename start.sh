@@ -1,5 +1,4 @@
 #!/bin/bash
-# Helpful to read output when debugging
 
 # Stop display manager
 systemctl stop display-manager.service
@@ -11,7 +10,6 @@ systemctl stop display-manager.service
 # Unbind EFI-Framebuffer
 # echo efi-framebuffer.0 > /sys/bus/platform/drivers/efi-framebuffer/unbind
 
-# Avoid a Race condition by waiting 2 seconds.
 # sleep 2
 
 # Unbind the GPU from display driver
